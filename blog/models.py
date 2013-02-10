@@ -11,9 +11,13 @@ class Post(models.Model):
 	published = models.BooleanField(default=True)
 	created = models.DateTimeField(auto_now_add=True)
 
-class meta:
-	order =['-created']
+	class meta:
+#Class meta is sub class of class post
+		order =['-created']
+	
+#def needs to be tabbed once in order to be part of class meta
 	def __unicode__(self):
 		return u'%s' % self.title
+	
 	def get_absolute_url(self):
-		return reverse('blog.views.post', args=[self.slug])		
+		return reverse('blog.views.post', args=[self.slug])
