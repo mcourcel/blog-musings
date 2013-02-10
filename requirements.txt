@@ -1,0 +1,16 @@
+Django==1.4.3
+Markdown==2.2.1
+Twisted==12.3.0
+coverage==3.6
+distribute==0.6.34
+django-tinymce==1.5.1b4
+mock==1.0.1
+nose==1.2.1
+pyOpenSSL==0.13
+pywin32==218
+stevedore==0.8
+virtualenv==1.8.4
+virtualenv-clone==0.2.4
+virtualenvwrapper==3.6
+virtualenvwrapper-win==1.0.9
+zope.interface==4.0.3
